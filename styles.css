@@ -1,38 +1,67 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
+    background-color: #f5f7fa;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header */
 header {
     text-align: center;
     background-color: #1e3a8a;
-    color: #fff;
-    padding: 30px 0;
+    color: white;
+    padding: 20px;
     border-bottom: 4px solid #0f172a;
 }
 
 header h1 {
-    font-size: 2.5em;
     margin: 0;
+    font-size: 2.5em;
 }
 
 header p {
     font-size: 1.2em;
-    margin: 10px 0 0;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #0f172a;
+    border-radius: 5px;
+}
+
+/* Main Content */
 main {
     padding: 20px;
     max-width: 900px;
     margin: auto;
 }
 
+/* Sections */
 section {
-    background-color: #ffffff;
+    background: white;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -42,52 +71,60 @@ section {
 h2 {
     text-align: center;
     color: #1e3a8a;
+}
+
+/* Profile */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #1e3a8a;
     margin-bottom: 15px;
 }
 
-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 4px solid #1e3a8a;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: block;
-    margin: 0 auto 20px;
+/* Skills */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.skill-container span {
+    background: #1e3a8a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.1em;
 }
 
-li {
+/* Goals */
+.goal {
+    text-align: center;
+    padding: 10px;
     margin-bottom: 10px;
+    background: #e0f2fe;
+    border-radius: 10px;
 }
 
-.contact a {
+/* Contact Links */
+#contact a {
     color: #1e3a8a;
     text-decoration: none;
 }
 
-.contact a:hover {
+#contact a:hover {
     text-decoration: underline;
 }
+
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #0f172a;
-    color: #fff;
-}
-
-.future-goals, .achievements {
-    background-color: #e0f2fe;
-}
-
-.skills {
-    background-color: #fef3c7;
-}
-
-.education {
-    background-color: #d1fae5;
+    color: white;
 }
