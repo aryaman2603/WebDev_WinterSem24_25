@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Rescue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="home-btn">
+            <i class="fas fa-home"></i>
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">☰ Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">About Us</a> <!-- Same Page -->
+                <a href="adopt.html">Adopt</a>
+                <a href="help.html">How You Can Help</a>
+                <a href="#contact">Contact Us</a> <!-- Scrolls to footer -->
+            </div>
+        </div>
+        <h1>🐾 PawPalace 🐾</h1>
+        <h3> Pet Rescue and Adoption Center</h3>
+        <p>Find your furry friend today!</p>
+    </header>
+    <input type="text" id="searchBar" placeholder="Search for a pet..." onkeyup="searchPets()">
+
+    <section id="pets">
+        <h2>Meet Our Rescued Pets</h2>
+        <div class="pet-container">
+            <div class="pet">
+                <img src="images/puppy-1903313_640.jpg" alt="Dog">
+                <h3>Buddy</h3>
+                <p class = "species"><strong>Species:</strong> Dog 🐶</p>
+                <p><strong>Age:</strong> 4 months</p>
+                <p class = "color"><strong>Color:</strong> Golden Brown</p>
+                <p>Buddy is a playful and loving Labrador who enjoys long walks and belly rubs.</p>
+                <button onclick="adoptPet('Buddy')">Adopt Me</button>
+            </div>
+
+            <div class="pet">
+                <img src="images/images.jpeg" alt="Cat">
+                <h3>Whiskers</h3>
+                <p class="species"><strong>Species:</strong> Cat 🐱</p>
+                <p><strong>Age:</strong> 3 years</p>
+                <p class="color"><strong>Color:</strong> White & Gray</p>
+                <p>Whiskers is a calm and affectionate cat who loves cuddles and naps in the sun.</p>
+                <button onclick="adoptPet('Whiskers')">Adopt Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Popup Form -->
+<div id="adoptionModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Adoption Request</h2>
+        <p>Fill in your details to adopt <span id="petName"></span>.</p>
+        <input type="text" id="adopterName" placeholder="Your Name">
+        <input type="email" id="adopterEmail" placeholder="Your Email">
+        <input type="text" id="adopterNumber" placeholder="Your Contact No."><br><br>
+        <button onclick="submitAdoption()">Submit</button>
+    </div>
+</div>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> contact@pawpalace.com</p>
+        <p><strong>Address:</strong> 123 Pet Rescue Lane, City, Country</p>
+        <div class="socials">
+            <a href="#" target="_blank">🐦 Twitter</a> |
+            <a href="#" target="_blank">📘 Facebook</a> |
+            <a href="#" target="_blank">📸 Instagram</a>
+        </div>
+        <p>© 2025 PawPalace. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
