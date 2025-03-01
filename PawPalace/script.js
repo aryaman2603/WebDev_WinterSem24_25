@@ -87,5 +87,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500);
 });
 
+// Open the Donation Form Popup
+function openDonationForm() {
+    document.getElementById("donationForm").style.display = "block";
+}
 
+// Close the Donation Form
+function closeDonationForm() {
+    document.getElementById("donationForm").style.display = "none";
+}
 
+// Process Donation (Fake Payment Simulation)
+function processDonation() {
+    let amount = document.getElementById("donationAmount").value;
+    let paymentMethod = document.getElementById("paymentMethod").value;
+    let statusMsg = document.getElementById("donationStatus");
+
+    if (!amount || amount <= 0) {
+        statusMsg.innerHTML = "❌ Please enter a valid amount.";
+        statusMsg.style.color = "red";
+        return;
+    }
+
+    statusMsg.innerHTML = "🔄 Processing payment...";
+    statusMsg.style.color = "blue";
+
+    setTimeout(() => {
+        statusMsg.innerHTML = `✅ Payment of $${amount} via ${paymentMethod} was successful!`;
+        statusMsg.style.color = "green";
+
+        // Close the form after 3 seconds
+        setTimeout(closeDonationForm, 3000);
+    }, 2000);
+}
