@@ -1,0 +1,46 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.left{
+    width: 60%;
+}
+
+.right{
+    width: 35%;
+}
+
+.right img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 85px;
+    margin-left: 10px;
+}
+
+.section-header{
+    font-weight: bold;
+    color: blue;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,td{
+    border: 1px solid #000;
+}
+
+th,td{
+    padding: 8px;
+    text-align: left;
+}

@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.checker{
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: 350px
+}
+
+.checker button{
+    margin: 10px;
+}
+
+.result{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
